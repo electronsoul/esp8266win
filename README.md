@@ -1,3 +1,4 @@
+
 # Core ESP8266 On Windows
 
 ### This Is A Simple Guide For Setting Up Esp8266 Tool-Chain,  Programming Interface And Hardware On Windows In A Easy Manner       
@@ -33,10 +34,10 @@ https://dl.espressif.com/dl/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-win32.zip
   - Use Enter key To Go Into A Sub-Menu, Escape Key To Back
   - Now, Navigate To `Serial flasher config` > `Default serial port` 
      To Configure The Serial Port Confirm selection by pressing enter, save     configuration by selecting `< Save >`
-![enter image description here](https://docs.espressif.com/projects/esp8266-rtos-sdk/en/latest/_images/project-configuration.png)![enter image description here](https://docs.espressif.com/projects/esp8266-rtos-sdk/en/latest/_images/project-configuration.png)   
+![enter image description here](https://raw.githubusercontent.com/samkhannaind/esp8266win/main/images/serial_1.JPG)![enter image description here](https://raw.githubusercontent.com/samkhannaind/esp8266win/main/images/serial_2.JPG)   
   - Navigate back To Main Menu And Move To `SDK Tool Config` Press   Enter
   - Enter Full Path To Your Tool-Chain In This Fashion **PAY ATTENTION HERE**
-  ![enter image description here](https://docs.espressif.com/projects/esp8266-rtos-sdk/en/latest/_images/project-configuration.png)![enter image description here](https://docs.espressif.com/projects/esp8266-rtos-sdk/en/latest/_images/project-configuration.png)     
+  ![enter image description here](https://raw.githubusercontent.com/samkhannaind/esp8266win/main/images/sdk_1.JPG)![enter image description here](https://raw.githubusercontent.com/samkhannaind/esp8266win/main/images/sdk_2.JPG)     
   - Save The Configuration by selecting `< Save >` and then exit application by selecting `< Exit >`
 -Connect Your Hardware And Run The Following Command In Terminal 
 `make flash` 
