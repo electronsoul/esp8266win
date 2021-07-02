@@ -18,7 +18,10 @@
                    GND-------- 1KOhm Pull Down--------GPIO15
                    GND--------------------------------GND
                    
-                   
+<html>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+  <body>
 ```mermaid
 graph TD
 
@@ -32,6 +35,9 @@ L[DTR] --> M[GPIO0]
 N[GND] --> O[1KOhm Pull Up] --> P[GPIO15]
 N[GND] --> Q[GND] 
 ```
+  
+</body>
+</html>
 
 ## Software Steps 
 
