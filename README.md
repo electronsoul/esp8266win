@@ -18,8 +18,9 @@
                    GND-------- 1KOhm Pull Down--------GPIO15
                    GND--------------------------------GND
                    
+                   
 ```mermaid
-graph LR
+graph TD
 
 A[RTS] --> B[RESET] 
 C[+3.3V] --> D[VCC]
@@ -30,39 +31,7 @@ I[TX] --> K[RX]
 L[DTR] --> M[GPIO0] 
 N[GND] --> O[1KOhm Pull Up] --> P[GPIO15]
 N[GND] --> Q[GND] 
-
 ```
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
-    </head>
-	 
-<body>
- <pre><code class="language-mermaid">graph LR
-A--&gt;B
-</code></pre>
-
-<div class="mermaid">graph LR
-A--&gt;B
-</div>
-	
-</body>
-<script>
-var config = {
-    startOnLoad:true,
-    theme: 'forest',
-    flowchart:{
-            useMaxWidth:false,
-            htmlLabels:true
-        }
-};
-mermaid.initialize(config);
-window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
-</script>
-
-</html>
-
 
 ## Software Steps 
 
