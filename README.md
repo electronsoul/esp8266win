@@ -18,8 +18,8 @@
                    GND-------- 1KOhm Pull Down--------GPIO15
                    GND--------------------------------GND
                    
-```mermaid 
-
+```mermaid
+graph LR
 
 A[RTS] --> B[RESET] 
 C[+3.3V] --> D[VCC]
