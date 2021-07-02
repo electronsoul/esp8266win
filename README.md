@@ -19,7 +19,7 @@
                    GND--------------------------------GND
                    
 ```mermaid 
-graph LR
+
 
 A[RTS] --> B[RESET] 
 C[+3.3V] --> D[VCC]
