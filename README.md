@@ -30,7 +30,9 @@ I[TX] --> K[RX]
 L[DTR] --> M[GPIO0] 
 N[GND] --> O[1KOhm Pull Up] --> P[GPIO15]
 N[GND] --> Q[GND] 
+
 ```
+
 
 ## Software Steps 
 
