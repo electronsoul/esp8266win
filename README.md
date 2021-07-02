@@ -3,6 +3,35 @@
 
 ### This Is A Simple Guide For Setting Up Esp8266 Tool-Chain,  Programming Interface And Hardware On Windows In A Easy Manner       
 
+## Hardware Steps 
+
+### I am using A USB-To-UART (At +3.3V Not 5V) Converter With ESP-07 But Any ESP Module Will Work If It has The Following Pins Available
+
+               USB-To-UART                          ESP Module
+                   RTS -------------------------------RESET
+                   +3.3V|------1KOhm Pull Up----|CH_PD/ENABLE
+                        |-------0.1uF(104)------| 
+                   +3.3V------------------------------VCC
+                   RX---------------------------------TX
+                   TX---------------------------------RX
+                   DTR--------------------------------GPIO0
+                   GND-------- 1KOhm Pull Down--------GPIO15
+                   GND--------------------------------GND
+                   
+```mermaid
+graph LR
+
+A[RTS] --> B[RESET] 
+C[+3.3V] --> D[VCC]
+C --> E[1KOhm Pull Up] --> F[CH_PD/ENABLE]
+C --> G[0.1uF Ceramic 104 ] --> F[CH_PD/ENABLE]
+H[RX] --> J[TX]
+I[TX] --> K[RX]  
+L[DTR] --> M[GPIO0] 
+N[GND] --> O[1KOhm Pull Up] --> P[GPIO15]
+N[GND] --> Q[GND] 
+```
+
 ## Software Steps 
 
 - Download The MSYS2 Zip
@@ -44,4 +73,3 @@ https://dl.espressif.com/dl/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-win32.zip
 Have Patience, It Will Take Some Time. It Will Compile And Upload Your File
 
 ## _Enjoy_
-
